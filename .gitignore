@@ -1,0 +1,13 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Working files (raw source photos — only optimized ones get committed)
+/_raw_photos/
+node_modules/
