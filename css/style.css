@@ -1,1 +1,78 @@
-/* placeholder - populated in Task 2 */
+/* === Vismara Bagni — stylesheet === */
+
+/* --- Fonts --- */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap");
+
+/* --- Design tokens --- */
+:root {
+  --c-primary: #2A7BC0;
+  --c-primary-dark: #0F3D6E;
+  --c-accent: #E89559;
+  --c-bg: #FAFAFA;
+  --c-text: #4A4A4A;
+  --c-border: #E5E7EB;
+  --c-white: #FFFFFF;
+  --c-success: #2F9E44;
+  --c-error: #D62828;
+
+  --ff-display: "Poppins", system-ui, sans-serif;
+  --ff-body: "Inter", system-ui, sans-serif;
+
+  --fs-base: 17px;
+  --fs-h1: clamp(2rem, 5vw, 3.5rem);
+  --fs-h2: clamp(1.6rem, 3.5vw, 2.4rem);
+  --fs-h3: 1.25rem;
+
+  --sp-1: 0.5rem;
+  --sp-2: 1rem;
+  --sp-3: 1.5rem;
+  --sp-4: 2rem;
+  --sp-6: 3rem;
+  --sp-8: 4rem;
+  --sp-12: 6rem;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  --shadow-sm: 0 1px 3px rgba(15, 61, 110, 0.08);
+  --shadow-md: 0 6px 24px rgba(15, 61, 110, 0.12);
+
+  --container: 1180px;
+  --header-h: 76px;
+}
+
+/* --- Reset --- */
+*, *::before, *::after { box-sizing: border-box; }
+html { font-size: var(--fs-base); scroll-behavior: smooth; scroll-padding-top: var(--header-h); }
+body {
+  margin: 0;
+  font-family: var(--ff-body);
+  color: var(--c-text);
+  background: var(--c-bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; }
+
+h1, h2, h3 {
+  font-family: var(--ff-display);
+  color: var(--c-primary-dark);
+  line-height: 1.2;
+  margin: 0 0 var(--sp-3);
+}
+h1 { font-size: var(--fs-h1); font-weight: 700; }
+h2 { font-size: var(--fs-h2); font-weight: 600; }
+h3 { font-size: var(--fs-h3); font-weight: 600; }
+
+p { margin: 0 0 var(--sp-2); }
+
+.container {
+  width: min(100% - 2 * var(--sp-3), var(--container));
+  margin-inline: auto;
+}
+
+section { padding: var(--sp-12) 0; }
+@media (max-width: 720px) { section { padding: var(--sp-8) 0; } }
