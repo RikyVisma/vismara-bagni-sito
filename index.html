@@ -269,7 +269,142 @@
         </p>
       </div>
     </section>
+
+    <section id="contatti" class="contatti">
+      <div class="container">
+        <p class="section-eyebrow">Contatti</p>
+        <h2>Pronti a iniziare? Parlaci del tuo bagno.</h2>
+        <p class="section-lede">
+          Compila il form per un <strong>preventivo gratuito e senza impegno</strong> oppure
+          scrivici o chiamaci direttamente. Risposta entro 24 ore lavorative.
+        </p>
+
+        <div class="contatti__grid">
+          <form class="preventivo-form"
+                name="preventivo"
+                method="POST"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                netlify>
+            <input type="hidden" name="form-name" value="preventivo">
+            <p hidden><label>Non compilare: <input name="bot-field"></label></p>
+
+            <div class="form-row">
+              <label for="nome">Nome e cognome *</label>
+              <input id="nome" name="nome" type="text" required autocomplete="name">
+            </div>
+
+            <div class="form-row form-row--split">
+              <div>
+                <label for="telefono">Telefono *</label>
+                <input id="telefono" name="telefono" type="tel" required autocomplete="tel" pattern="[0-9 +()-]{6,}">
+              </div>
+              <div>
+                <label for="email">Email *</label>
+                <input id="email" name="email" type="email" required autocomplete="email">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="tipo">Tipo di intervento</label>
+              <select id="tipo" name="tipo">
+                <option value="">Seleziona…</option>
+                <option>Box doccia</option>
+                <option>Mobili bagno</option>
+                <option>Bagno completo</option>
+                <option>Sopralluogo</option>
+                <option>Altro</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="messaggio">Messaggio</label>
+              <textarea id="messaggio" name="messaggio" rows="4" placeholder="Descrivi il tuo progetto, lo spazio, le tue idee…"></textarea>
+            </div>
+
+            <div class="form-row form-row--checkbox">
+              <label>
+                <input type="checkbox" name="privacy" required>
+                Ho letto e accetto l'informativa privacy *
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn--accent">Invia richiesta</button>
+
+            <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+            <p class="form-fallback">
+              Problemi con il form?
+              <a href="mailto:vismarasnc@tiscalinet.it?subject=Richiesta preventivo&body=Salve, vorrei…">
+                Scrivici via email
+              </a>
+            </p>
+          </form>
+
+          <aside class="contatti-info">
+            <ul class="contatti-info__list">
+              <li>
+                <span aria-hidden="true">📍</span>
+                <div>
+                  <strong>Showroom</strong><br>
+                  Via Unità d'Italia, 10<br>
+                  20037 Paderno Dugnano (MI)
+                </div>
+              </li>
+              <li>
+                <span aria-hidden="true">☎️</span>
+                <div>
+                  <strong>Telefono</strong><br>
+                  <a href="tel:+390291822180">02 918 2218</a>
+                </div>
+              </li>
+              <li>
+                <span aria-hidden="true">💬</span>
+                <div>
+                  <strong>WhatsApp</strong><br>
+                  <a href="https://wa.me/393356529601" target="_blank" rel="noopener">+39 335 652 9601</a>
+                </div>
+              </li>
+              <li>
+                <span aria-hidden="true">✉️</span>
+                <div>
+                  <strong>Email</strong><br>
+                  <a href="mailto:vismarasnc@tiscalinet.it">vismarasnc@tiscalinet.it</a>
+                </div>
+              </li>
+              <li>
+                <span aria-hidden="true">🕐</span>
+                <div>
+                  <strong>Orari</strong><br>
+                  <em>Lun–Sab: orari da confermare</em><!-- PLACEHOLDER -->
+                </div>
+              </li>
+            </ul>
+
+            <div class="contatti-info__map">
+              <iframe
+                title="Mappa Vismara Bagni"
+                src="https://www.google.com/maps?q=Via+Unit%C3%A0+d%27Italia+10,+20037+Paderno+Dugnano+MI&output=embed"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen></iframe>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- Netlify form-detection stub (build-time only, hidden) -->
+  <form name="preventivo" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="nome">
+    <input type="tel" name="telefono">
+    <input type="email" name="email">
+    <select name="tipo">
+      <option>Box doccia</option><option>Mobili bagno</option>
+      <option>Bagno completo</option><option>Sopralluogo</option><option>Altro</option>
+    </select>
+    <textarea name="messaggio"></textarea>
+    <input type="checkbox" name="privacy">
+  </form>
 
   <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Galleria foto">
     <button class="lightbox__close" aria-label="Chiudi">×</button>
@@ -287,5 +422,6 @@
 
   <script src="js/nav.js" defer></script>
   <script src="js/gallery.js" defer></script>
+  <script src="js/form.js" defer></script>
 </body>
 </html>
