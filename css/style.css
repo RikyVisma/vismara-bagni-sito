@@ -184,3 +184,49 @@ section { padding: var(--sp-12) 0; }
   display: flex; flex-wrap: wrap; gap: var(--sp-3);
   font-size: 0.95rem; opacity: 0.9;
 }
+
+/* --- Section helpers --- */
+.section-eyebrow {
+  font-family: var(--ff-display);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--c-accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0 0 var(--sp-2);
+}
+
+/* --- Chi siamo --- */
+.chi-siamo__lede {
+  max-width: 800px;
+  margin-bottom: var(--sp-6);
+  font-size: 1.05rem;
+}
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--sp-4);
+}
+.team-card {
+  background: var(--c-white);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-4);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+.team-card img {
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto var(--sp-3);
+  border: 4px solid var(--c-bg);
+  box-shadow: var(--shadow-sm);
+}
+.team-card h3 { margin-bottom: 0.25rem; }
+.team-card__role {
+  color: var(--c-primary);
+  font-weight: 500;
+  margin-bottom: var(--sp-2);
+}
+.team-card p { text-align: left; }
