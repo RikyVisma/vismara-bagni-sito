@@ -467,3 +467,39 @@ section { padding: var(--sp-12) 0; }
 .contatti-info__map iframe {
   width: 100%; height: 280px; border: 0; display: block;
 }
+
+/* --- Footer --- */
+.site-footer {
+  background: var(--c-primary-dark);
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: var(--sp-8);
+}
+.site-footer__inner {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.3fr;
+  gap: var(--sp-4);
+  padding: var(--sp-6) 0;
+}
+.site-footer img { filter: brightness(0) invert(1); height: 44px; margin-bottom: var(--sp-2); }
+.site-footer h4 {
+  color: var(--c-white);
+  font-family: var(--ff-display);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: var(--sp-2);
+}
+.site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.4rem; }
+.site-footer a { color: rgba(255,255,255,0.85); }
+.site-footer a:hover { color: var(--c-accent); }
+.site-footer address { font-style: normal; line-height: 1.7; }
+.site-footer__legal {
+  background: rgba(0,0,0,0.2);
+  padding: var(--sp-2) 0;
+  font-size: 0.85rem;
+  text-align: center;
+}
+.placeholder { opacity: 0.6; font-style: italic; }
+@media (max-width: 720px) {
+  .site-footer__inner { grid-template-columns: 1fr; }
+}
