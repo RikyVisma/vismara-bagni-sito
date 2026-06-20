@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" role="img" aria-label="Vismara Bagni">
+  <defs>
+    <linearGradient id="dropGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E89559"/>
+      <stop offset="100%" stop-color="#D87738"/>
+    </linearGradient>
+  </defs>
+  <!-- Goccia stilizzata, accento arancio -->
+  <path d="M40 8 C 56 28, 64 42, 56 56 C 50 68, 30 68, 24 56 C 16 42, 24 28, 40 8 Z"
+        fill="url(#dropGrad)" />
+  <!-- "vismara" corsivo blu -->
+  <text x="86" y="38"
+        font-family="Poppins, sans-serif" font-weight="600" font-style="italic"
+        font-size="30" fill="#2A7BC0" letter-spacing="-0.5">vismara</text>
+  <!-- "arredamenti" piccolo grigio -->
+  <text x="88" y="52"
+        font-family="Inter, sans-serif" font-weight="500"
+        font-size="10" fill="#7B7B7B" letter-spacing="2.5">ARREDAMENTI</text>
+  <!-- "bagni" bold blu navy -->
+  <text x="86" y="74"
+        font-family="Poppins, sans-serif" font-weight="700"
+        font-size="22" fill="#0F3D6E" letter-spacing="-0.3">bagni</text>
+</svg>

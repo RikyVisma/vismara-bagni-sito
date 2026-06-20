@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#0F3D6E"/>
+  <path d="M32 10 C 44 26, 50 38, 44 50 C 39 60, 25 60, 20 50 C 14 38, 20 26, 32 10 Z"
+        fill="#E89559"/>
+  <text x="32" y="44" text-anchor="middle"
+        font-family="Poppins, sans-serif" font-weight="700"
+        font-size="22" fill="#FFFFFF">V</text>
+</svg>
