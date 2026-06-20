@@ -12,16 +12,16 @@ OUT_THUMB = OUT_FULL / "thumb"
 OUT_FULL.mkdir(parents=True, exist_ok=True)
 OUT_THUMB.mkdir(parents=True, exist_ok=True)
 
-# Final 12 — order matters: #01 is used as hero background, so it must be the best/cleanest.
+# Final 12 — order matters: #01 is used as hero background (must be high-res, bright, broad view).
 SOURCES = [
-    # 01: hero — bagno scuro con specchio LED + pampas, il pezzo forte
-    "WhatsApp Image 2026-06-19 at 20.16.12.jpeg",
+    # 01: hero — bagno marmo bianco con finestra (overview luminoso, alta risoluzione)
+    "WhatsApp Image 2026-06-19 at 20.16.41.jpeg",
     # 02: lavandino ovale su mensola legno + specchio rotondo + colonna nera
     "WhatsApp Image 2026-06-19 at 20.15.22 (2).jpeg",
     # 03: doccia walk-in marmo bianco + soffione nero
     "WhatsApp Image 2026-06-19 at 20.17.26 (2).jpeg",
-    # 04: bagno marmo bianco con finestra (overview)
-    "WhatsApp Image 2026-06-19 at 20.16.41.jpeg",
+    # 04: bagno scuro con specchio LED + pampas (pezzo forte ma a bassa risoluzione)
+    "WhatsApp Image 2026-06-19 at 20.16.12.jpeg",
     # 05: lavandino su top nero marmorizzato
     "WhatsApp Image 2026-06-19 at 20.15.22 (4).jpeg",
     # 06: bagno con specchio LED rotondo + mensola legno + colonna + pianta
