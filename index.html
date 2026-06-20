@@ -193,7 +193,44 @@
         </div>
       </div>
     </section>
+
+    <section id="lavori" class="lavori">
+      <div class="container">
+        <p class="section-eyebrow">Lavori</p>
+        <h2>I bagni che abbiamo firmato.</h2>
+        <p class="section-lede">
+          Ogni progetto è diverso, perché ogni cliente lo è. Sfoglia alcuni dei lavori che abbiamo
+          realizzato nel nostro showroom e a casa dei nostri clienti.
+        </p>
+
+        <ul class="gallery" id="gallery">
+          <li class="gallery__item"><button type="button" data-full="img/lavori/01.jpg"><img src="img/lavori/thumb/01.jpg" alt="Bagno realizzato — vista 1" loading="lazy" width="800" height="600"></button></li>
+          <li class="gallery__item"><button type="button" data-full="img/lavori/02.jpg"><img src="img/lavori/thumb/02.jpg" alt="Bagno realizzato — vista 2" loading="lazy" width="800" height="600"></button></li>
+          <li class="gallery__item"><button type="button" data-full="img/lavori/03.jpg"><img src="img/lavori/thumb/03.jpg" alt="Bagno realizzato — vista 3" loading="lazy" width="800" height="600"></button></li>
+          <li class="gallery__item"><button type="button" data-full="img/lavori/04.jpg"><img src="img/lavori/thumb/04.jpg" alt="Bagno realizzato — vista 4" loading="lazy" width="800" height="600"></button></li>
+          <li class="gallery__item"><button type="button" data-full="img/lavori/05.jpg"><img src="img/lavori/thumb/05.jpg" alt="Bagno realizzato — vista 5" loading="lazy" width="800" height="600"></button></li>
+          <li class="gallery__item"><button type="button" data-full="img/lavori/06.jpg"><img src="img/lavori/thumb/06.jpg" alt="Bagno realizzato — vista 6" loading="lazy" width="800" height="600"></button></li>
+          <li class="gallery__item"><button type="button" data-full="img/lavori/07.jpg"><img src="img/lavori/thumb/07.jpg" alt="Bagno realizzato — vista 7" loading="lazy" width="800" height="600"></button></li>
+          <li class="gallery__item"><button type="button" data-full="img/lavori/08.jpg"><img src="img/lavori/thumb/08.jpg" alt="Bagno realizzato — vista 8" loading="lazy" width="800" height="600"></button></li>
+          <li class="gallery__item"><button type="button" data-full="img/lavori/09.jpg"><img src="img/lavori/thumb/09.jpg" alt="Bagno realizzato — vista 9" loading="lazy" width="800" height="600"></button></li>
+          <li class="gallery__item"><button type="button" data-full="img/lavori/10.jpg"><img src="img/lavori/thumb/10.jpg" alt="Bagno realizzato — vista 10" loading="lazy" width="800" height="600"></button></li>
+          <li class="gallery__item"><button type="button" data-full="img/lavori/11.jpg"><img src="img/lavori/thumb/11.jpg" alt="Bagno realizzato — vista 11" loading="lazy" width="800" height="600"></button></li>
+          <li class="gallery__item"><button type="button" data-full="img/lavori/12.jpg"><img src="img/lavori/thumb/12.jpg" alt="Bagno realizzato — vista 12" loading="lazy" width="800" height="600"></button></li>
+        </ul>
+
+        <div class="lavori__cta">
+          <a href="#contatti" class="btn btn--accent">Vuoi un bagno così? Richiedi un preventivo</a>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Galleria foto">
+    <button class="lightbox__close" aria-label="Chiudi">×</button>
+    <button class="lightbox__prev" aria-label="Foto precedente">‹</button>
+    <img class="lightbox__img" alt="">
+    <button class="lightbox__next" aria-label="Foto successiva">›</button>
+  </div>
 
   <a href="https://wa.me/393356529601?text=Ciao,%20vorrei%20informazioni%20su…"
      class="whatsapp-fab" aria-label="Scrivici su WhatsApp" target="_blank" rel="noopener">
@@ -203,5 +240,6 @@
   </a>
 
   <script src="js/nav.js" defer></script>
+  <script src="js/gallery.js" defer></script>
 </body>
 </html>
