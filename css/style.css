@@ -163,3 +163,24 @@ section { padding: var(--sp-12) 0; }
   transition: transform 0.15s ease;
 }
 .whatsapp-fab:hover { transform: scale(1.06); }
+
+/* --- Hero --- */
+.hero {
+  position: relative;
+  min-height: calc(100svh - var(--header-h));
+  background:
+    linear-gradient(135deg, rgba(15,61,110,0.78), rgba(15,61,110,0.55)),
+    #0F3D6E url("../img/lavori/01.jpg") center / cover no-repeat;
+  color: var(--c-white);
+  display: flex; align-items: center;
+  padding: var(--sp-8) 0;
+}
+.hero__inner { max-width: 880px; }
+.hero h1 { color: var(--c-white); margin-bottom: var(--sp-3); }
+.hero__lede { font-size: 1.15rem; margin-bottom: var(--sp-4); max-width: 700px; }
+.hero__cta { display: flex; gap: var(--sp-2); flex-wrap: wrap; margin-bottom: var(--sp-4); }
+.hero__badges {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; flex-wrap: wrap; gap: var(--sp-3);
+  font-size: 0.95rem; opacity: 0.9;
+}
