@@ -10,22 +10,27 @@
     feedback.textContent = "Invio in corso…";
 
     try {
-      const data = new FormData(form);
-      const body = new URLSearchParams();
-      for (const [k, v] of data.entries()) body.append(k, v);
-
-      const res = await fetch("/", {
+      // Use FormSubmit's AJAX endpoint (JSON response, CORS enabled)
+      const endpoint = form.action.replace("formsubmit.co/", "formsubmit.co/ajax/");
+      const res = await fetch(endpoint, {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: body.toString()
+        headers: { "Accept": "application/json" },
+        body: new FormData(form)
       });
+      const data = await res.json().catch(() => ({}));
+      const ok = data.success === "true" || data.success === true;
+      const needsActivation = /confirm|activat|attiv/i.test(data.message || "");
 
-      if (res.ok) {
+      if (res.ok && ok) {
         feedback.textContent = "✓ Richiesta inviata! Ti risponderemo entro 24 ore lavorative.";
         feedback.className = "form-feedback is-success";
         form.reset();
+      } else if (needsActivation) {
+        // First-time only: FormSubmit sent an activation email to the owner
+        feedback.textContent = "Modulo in attivazione: controlla la tua email per confermare (succede solo la prima volta).";
+        feedback.className = "form-feedback is-success";
       } else {
-        throw new Error(`HTTP ${res.status}`);
+        throw new Error(data.message || `HTTP ${res.status}`);
       }
     } catch (err) {
       console.error("Form error:", err);

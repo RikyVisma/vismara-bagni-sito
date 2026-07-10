@@ -410,13 +410,12 @@
 
         <div class="contatti__grid">
           <form class="preventivo-form"
-                name="preventivo"
-                method="POST"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                netlify>
-            <input type="hidden" name="form-name" value="preventivo">
-            <p hidden><label>Non compilare: <input name="bot-field"></label></p>
+                action="https://formsubmit.co/vismarasnc@tiscalinet.it"
+                method="POST">
+            <input type="hidden" name="_subject" value="Nuova richiesta di preventivo — sito Vismara Bagni">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
 
             <div class="form-row">
               <label for="nome">Nome e cognome *</label>
@@ -563,19 +562,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- Netlify form-detection stub (build-time only, hidden) -->
-  <form name="preventivo" netlify netlify-honeypot="bot-field" hidden>
-    <input type="text" name="nome">
-    <input type="tel" name="telefono">
-    <input type="email" name="email">
-    <select name="tipo">
-      <option>Box doccia</option><option>Mobili bagno</option>
-      <option>Bagno completo</option><option>Sopralluogo</option><option>Altro</option>
-    </select>
-    <textarea name="messaggio"></textarea>
-    <input type="checkbox" name="privacy">
-  </form>
 
   <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Galleria foto">
     <button class="lightbox__close" aria-label="Chiudi">×</button>
